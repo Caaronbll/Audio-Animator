@@ -30,6 +30,7 @@ The Audio Animator project allows you to create visual animations based on MIDI 
 Before you begin, ensure you have the following:
 
 - Web browser with JavaScript enabled.
+- MIDI Keyboard with USB connection.
 
 ### Installation
 
@@ -37,3 +38,5 @@ Before you begin, ensure you have the following:
 
    ```bash
    git clone https://github.com/your-username/audio-animator.git
+
+   live-run Animator/index.html
