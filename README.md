@@ -39,4 +39,4 @@ Before you begin, ensure you have the following:
    ```bash
    git clone https://github.com/your-username/audio-animator.git
 
-   live-run Animator/index.html
+ 2. live-preview Animator/index.html
