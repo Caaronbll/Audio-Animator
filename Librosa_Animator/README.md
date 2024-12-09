@@ -22,6 +22,7 @@ Run the following command to install the necessary system libraries:
 ```bash
 sudo apt update
 sudo apt install libsndfile1 ffmpeg -y
+```
 
 ## Task 2: Install Librosa Using Pip
 
@@ -29,6 +30,7 @@ After installing the system dependencies, you can proceed with installing **Libr
 
 ```bash
 pip3 install librosa
+```
 
 ## Task 3: Verify the Installation of Librosa
 
@@ -36,5 +38,6 @@ To confirm that Librosa has been installed successfully, confirm the version:
 
 ```bash
 python3 -c "import librosa; print(librosa.__version__)"
+```
 
 If the installation was successful, the version of Librosa will be displayed in the terminal without any errors.
