@@ -9,5 +9,5 @@ print(librosa.__version__) # print version
 
 audio_path = 'Pj.mp3'
 y, sr = librosa.load(audio_path, sr=22050) # sr = sample rate(Hz)
-print(y[:300])
+print(y[:30])
 
