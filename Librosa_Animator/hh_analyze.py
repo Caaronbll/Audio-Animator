@@ -8,7 +8,7 @@ import librosa.display
 print(librosa.__version__) # print version
 
 
-audio_path = 'Audio_files/hh_audio.wav'
+audio_path = 'Audio_files/piano_test.wav'
 y, sr = librosa.load(audio_path, sr=22050) # sr = sample rate(Hz)
 
 # calculates measuments
@@ -37,7 +37,7 @@ time = np.arange(1, len(averages) + 1)
 
 # Plot the scaled averages
 plt.figure(figsize=(10, 6))
-plt.plot(time, averages, marker='o', linestyle='-', color='b', label='Scaled Average')
+plt.plot(time, averages, marker='', linestyle='-', color='b', label='Scaled Average')
 plt.xlabel('Group Number')
 plt.ylabel('Scaled Average')
 plt.title('Scaled Averages of y for Every 365 Measurements')
