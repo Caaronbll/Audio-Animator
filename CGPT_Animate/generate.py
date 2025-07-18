@@ -1,19 +1,38 @@
-# test_analyzer.py
+# ----- TITLE -----
 
-from load import AudioAnalyzer  # Replace with actual module name if needed
+# generate.py
 
-# Path to your test .wav file
-audio_path = "./audio_files/hh_audio.wav"
+# ----- IMPORTS -----
 
-# Create an instance of the analyzer
-analyzer = AudioAnalyzer(frame_duration=0.05, threshold_ratio=0.37)
+from moviepy.editor import VideoClip, AudioFileClip
+from PIL import Image, ImageDraw
+import numpy as np
 
-# Analyze the file using the method for high-hats
-hit_windows, times, sr = analyzer.analyze_hh(audio_path)
 
-# Print out some of the returned data
-print(f"\nSample rate: {sr}")
-print(f"Total hit windows detected: {len(hit_windows)}")
-print("First few hit windows:")
-for i, hit in enumerate(hit_windows[:3]):
-    print(f"  Hit {i+1}: start={hit['start']:.2f}s, peak={hit['peak_amplitude']:.4f}, duration={hit['end'] - hit['start']:.2f}s")
+# standard 1280w, 720h 
+# low fps, 20
+
+
+# ----- GENERATE CLASS -----
+
+class Generate:
+    def __init__(self, audio_path, frame_duration):
+        """
+        Initialize the generator.
+
+        Parameters:
+            audio_path (str): Path to the audio file to be used in the final video.
+            frame_duration (float): Duration of each frame (in seconds).
+        """
+        self.audio_path = audio_path
+        self.frame_duration = frame_duration
+
+    def draw_hh(self, hit_data):
+        """
+        Draws visuals for high-hat hits.
+
+        Parameters:
+            hit_data (list): List of hit dictionaries with amplitude data.
+        """
+        # (This method is intentionally left empty for now)
+        print(hit_data)

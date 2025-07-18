@@ -1,37 +1,52 @@
+# ----- TITLE -----
+
 # analyzer.py
+
+# ----- IMPORTS -----
 
 import librosa
 import numpy as np
 
-# (60fps)
+
+
+# FRAME DURATION TO FRAMES PER SECOND  
+# fd 0.05     = 20 fps
+# fd 0.025    = 40 fps
+# fd 0.01667  = 60 fps
+
+
+
+# ----- AUDIO ANALYZER CLASS -----
+
 class AudioAnalyzer:
-    def __init__(self, frame_duration=0.05, threshold_ratio=0.15):
+    def __init__(self, audio_path, frame_duration, threshold_ratio=0.15):
         """
         Initialize the analyzer.
 
         Parameters:
+            audio_path (str): Path to the audio file.
             frame_duration (float): Time duration per frame in seconds.
             threshold_ratio (float): Threshold for detecting hits (ratio of max amplitude).
         """
+        self.audio_path = audio_path
         self.frame_duration = frame_duration
         self.threshold_ratio = threshold_ratio
 
-    def get_hits(self, audio_path):
+    # ----- USES LIBROSA TO GET HIT DATA -----
+    def get_hits(self):
         """
         Analyze the audio and return information about detected hits.
 
         Returns:
             hit_data (list): List of dictionaries for each hit with:
-                - 'start' (float): Start time in seconds
-                - 'end' (float): End time in seconds
-                - 'start_amp' (float): RMS amplitude at hit start
-                - 'max_amp' (float): Maximum amplitude during the hit
-                - 'amplitude_curve' (list): List of RMS values across hit
+                - 'amp_start' (float): RMS amplitude at hit start
+                - 'amp_max' (float): Maximum amplitude during the hit
+                - 'amp_data' (list): List of RMS values across hit
             times (np.ndarray): Array of time values for each frame
             sr (int): Sample rate
         """
         # Load audio (librosa)
-        y, sr = librosa.load(audio_path, sr=None)
+        y, sr = librosa.load(self.audio_path, sr=None)
         print(f"Audio loaded. Sample rate: {sr} Hz")
 
         
@@ -59,7 +74,7 @@ class AudioAnalyzer:
                     hit_data.append({
                         'amp_start': float(amp_curve[0]),
                         'amp_max': float(np.max(amp_curve)),
-                        'amp': amp_curve
+                        'amp_data': amp_curve
                     })
                 in_hit = False
 
