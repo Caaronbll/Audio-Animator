@@ -1,0 +1,5 @@
+# Essentia currently requires NumPy 1.x in this project environment.
+numpy<2
+
+essentia
+Pillow

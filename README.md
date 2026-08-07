@@ -1,42 +1,131 @@
 # Audio Animator
 
-This is a simple audio animator project that utilizes p5.js and the Web MIDI API for animation and interaction.
+Audio Animator is a Python project that turns prerecorded musical audio stems into synchronized visual animations.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
+The project analyzes audio frame by frame, converts the extracted data into instrument-specific animation layers, and combines those layers into a final video.
 
-## Introduction
 
-The Audio Animator project allows you to create visual animations based on MIDI input. It uses p5.js for canvas animation and the Web MIDI API for handling MIDI input events.
+## Current Architecture
 
-## Features
+```text
+Audio stem
+    |
+    v
+Analyzer
+    |
+    v
+Frame-by-frame audio data
+    |
+    +--> ClosedHihatAnimator
+    +--> OpenHihatAnimator
+    +--> Future instrument animators
+              |
+              v
+           Composer
+              |
+              v
+         Final video
+```
 
-- Web MIDI API integration for real-time MIDI input.
-- Canvas animation using p5.js.
-- Customize and extend animations based on MIDI input.
+### Analyzer
 
-## Getting Started
+The analyzer loads a prerecorded audio stem and divides it into frames based on the selected frames-per-second value.
 
-### Prerequisites
+Each frame can contain data such as:
 
-Before you begin, ensure you have the following:
+- Maximum amplitude
+- Average amplitude
+- Hit status
+- Frame number
 
-- Web browser with JavaScript enabled.
-- MIDI Keyboard with USB connection.
+The analyzer is intended to remain reusable across different instruments.
 
-### Installation
+### Animators
 
-1. Clone the repository:
+Each instrument animator interprets the analyzer data differently.
 
-   ```bash
-   git clone https://github.com/your-username/audio-animator.git
+Current instrument classes include:
 
-2. live-preview Animator/index.html
+- `ClosedHihatAnimator`
+- `OpenHihatAnimator`
+
+Instrument-specific behavior, such as radius, transparency, attack, decay, and visual thresholds, belongs inside the relevant animator.
+
+### Composer
+
+The composer combines transparent animation layers over a black background and renders the frames into a video synchronized with the original audio.
+
+## Project Structure
+
+The exact structure may change as the project develops, but the main files are:
+
+```text
+Audio-Animator/
+├── analyzer.py
+├── animator_chh.py
+├── animator_ohh.py
+├── composer.py
+├── controller.py
+├── requirements.txt
+├── README.md
+└── Audio_files/
+    └── stems/
+```
+
+Generated JSON data, preview videos, virtual environments, and cache files should not be committed to the repository.
+
+## Requirements
+
+- Python 3
+- FFmpeg
+- NumPy
+- Essentia
+- Pillow
+
+Python packages can be installed with:
+
+```bash
+pip install -r requirements.txt
+```
+
+FFmpeg must be installed separately and available from the terminal.
+
+To confirm that FFmpeg is installed:
+
+```bash
+ffmpeg -version
+```
+
+## Running the Project
+
+Place the required audio files or stems in the paths configured inside `controller.py`.
+
+Then run:
+
+```bash
+python3 controller.py
+```
+
+The controller coordinates the analyzer, instrument animators, and composer.
+
+## Current Status
+
+The project currently has a working frame-based audio-analysis and animation pipeline focused on closed and open hi-hats.
+
+The next major milestone is combining multiple instrument layers through the composer and then expanding the system to instruments such as snare and piano.
+
+## Future Development
+
+Planned areas of development include:
+
+- Additional drum animators
+- Pitch-aware melodic animations
+- Instrument-specific color and shade mapping
+- Improved glow and gradient effects
+- More reusable animator interfaces
+- MIDI-based visualization
+- Expanded audio features such as RMS and spectral data
+
+## Project Scope
+
+Audio Animator is designed for prerecorded musical audio, individual stems, and MIDI-based visualization. It is not intended for microphone input or voice analysis.
