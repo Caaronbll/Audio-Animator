@@ -35,7 +35,7 @@ def main():
         WIDTH,
         HEIGHT
     )
-
+    chh_animator.print_json("CHH_hit_data.json")
     composer = Composer(
         [chh_animator],
         FPS,
