@@ -94,7 +94,7 @@ def ohh_animation_logic(frame, width=1280, height=720):
     else:
         alpha = int(max_amplitude * 10)
 
-    center_x = width // 2
+    center_x = (width // 2) * 1.5
     center_y = height // 2
 
     draw = ImageDraw.Draw(animation_layer)
