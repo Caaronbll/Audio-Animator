@@ -3,12 +3,12 @@
 import copy
 import json
 
-from Logic.animation_logic import chh_animation_logic
-from Logic.hit_logic import chh_hit_logic
+from Logic.animation_logic import ohh_animation_logic
+from Logic.hit_logic import ohh_hit_logic
 
 
-class ClosedHihatAnimator:
-    """Converts closed hi-hat audio data into frame-based animation layers."""
+class OpenHihatAnimator:
+    """Converts open hi-hat audio data into frame-based animation layers."""
 
     def __init__(
         self,
@@ -22,13 +22,13 @@ class ClosedHihatAnimator:
         self.width = width
         self.height = height
 
-        # Convert the analyzer output into closed hi-hat hit data.
+        # Convert the analyzer output into open hi-hat hit data.
         self.hit_data = self.get_hit_data()
 
         # The original dataset is no longer needed after hit processing.
         self.audio_data = None
 
-        print("-Audio data loaded to Closed Hihat Animator")
+        print("-Audio data loaded to Open Hihat Animator")
 
 
     def get_hit_data(self):
@@ -36,7 +36,7 @@ class ClosedHihatAnimator:
 
         hit_data = copy.deepcopy(self.audio_data)
 
-        return chh_hit_logic(hit_data)
+        return ohh_hit_logic(hit_data)
 
 
     def get_animation(self, frame_index):
@@ -44,7 +44,7 @@ class ClosedHihatAnimator:
 
         frame = self.hit_data[frame_index]
 
-        return chh_animation_logic(
+        return ohh_animation_logic(
             frame,
             self.width,
             self.height
