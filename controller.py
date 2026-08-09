@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from analyzer import Analyzer
-from animator_chh import ClosedHihatAnimator
+from Animators.animator_chh import ClosedHihatAnimator
 from composer import Composer
 
 
