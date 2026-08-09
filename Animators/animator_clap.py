@@ -22,7 +22,7 @@ class ClapAnimator:
         self.width = width
         self.height = height
 
-        # Convert the analyzer output into closed hi-hat hit data.
+        # Convert the analyzer output into clap hit data.
         self.hit_data = self.get_hit_data()
 
         # The original dataset is no longer needed after hit processing.
