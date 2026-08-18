@@ -54,15 +54,12 @@ class Analyzer:
 
 
     def get_audio_data(self):
-        """Returns max and average amplitude values for each frame."""
+        """Returns max, average, and RMS amplitude values for each frame."""
 
         self.audio_data.clear()
 
-        for start_sample in range(
-            0,
-            len(self.amplitude_envelope),
-            self.samples_per_frame
-        ):
+        for start_sample in range(0, len(self.amplitude_envelope), self.samples_per_frame):
+
             end_sample = start_sample + self.samples_per_frame
 
             frame_samples = self.amplitude_envelope[
@@ -71,14 +68,9 @@ class Analyzer:
 
             frame = {
                 "frame": len(self.audio_data) + 1,
-                "max_amplitude": round(
-                    float(np.max(frame_samples)),
-                    2
-                ),
-                "average_amplitude": round(
-                    float(np.mean(frame_samples)),
-                    2
-                )
+                "max_amp": round(float(np.max(frame_samples)), 2),
+                "avg_amp": round(float(np.mean(frame_samples)),2),
+                "rms_amp": round(float(np.sqrt(np.mean(frame_samples ** 2))),2)
             }
 
             self.audio_data.append(frame)
