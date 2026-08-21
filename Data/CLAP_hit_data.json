@@ -565,32 +565,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 82,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 83,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 84,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 85,
@@ -1689,32 +1685,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 242,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 243,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 244,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 245,
@@ -2813,32 +2805,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 402,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 403,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 404,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 405,
@@ -3937,32 +3925,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 562,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 563,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 564,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 565,
@@ -5061,32 +5045,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 722,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 723,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 724,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 725,
@@ -6185,32 +6165,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 882,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 883,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 884,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 885,
@@ -7309,32 +7285,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 1042,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 1043,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 1044,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 1045,
@@ -8433,32 +8405,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 1202,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 1203,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 1204,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 1205,
@@ -9557,32 +9525,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 1362,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 1363,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 1364,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 1365,
@@ -10681,32 +10645,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 1522,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 1523,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 1524,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 1525,
@@ -11805,32 +11765,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 1682,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 1683,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 1684,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 1685,
@@ -12929,32 +12885,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 1842,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 1843,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 1844,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 1845,
@@ -14053,32 +14005,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 2002,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 2003,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 2004,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 2005,
@@ -15177,32 +15125,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 2162,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 2163,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 2164,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 2165,
@@ -16301,32 +16245,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 2322,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 2323,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 2324,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 2325,
@@ -17425,32 +17365,28 @@
             "max_amp": 100.0,
             "avg_amp": 5.5,
             "rms_amp": 13.18,
-            "hit_status": "attack",
-            "cumulative_avg": 5.5
+            "hit_status": "attack"
         },
         {
             "frame": 2482,
             "max_amp": 76.56,
             "avg_amp": 5.76,
             "rms_amp": 11.83,
-            "hit_status": "decay",
-            "cumulative_avg": 11.26
+            "hit_status": "decay"
         },
         {
             "frame": 2483,
             "max_amp": 85.46,
             "avg_amp": 9.81,
             "rms_amp": 16.24,
-            "hit_status": "attack",
-            "cumulative_avg": 9.81
+            "hit_status": "attack"
         },
         {
             "frame": 2484,
             "max_amp": 34.31,
             "avg_amp": 1.91,
             "rms_amp": 4.45,
-            "hit_status": "decay",
-            "cumulative_avg": 11.72
+            "hit_status": "decay"
         },
         {
             "frame": 2485,
