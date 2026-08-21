@@ -34,6 +34,9 @@ class Composer:
         for animator in self.animators:
             animation_layer = animator.get_animation(frame_index)
 
+            if animation_layer is None:
+                continue
+                
             final_frame = Image.alpha_composite(
                 final_frame,
                 animation_layer
