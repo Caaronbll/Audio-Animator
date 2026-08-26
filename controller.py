@@ -38,7 +38,7 @@ def main():
         BPM,
         FPS
     )
-
+    
     ohh_analyzer = Analyzer(
         OHH_AUDIO_PATH,
         BPM,
@@ -56,13 +56,13 @@ def main():
         BPM,
         FPS
     )
-
+    
     # Get Audio Data
     chh_audio_data = chh_analyzer.get_audio_data()
     ohh_audio_data = ohh_analyzer.get_audio_data()
     shaker_audio_data = shaker_analyzer.get_audio_data()
     clap_audio_data = clap_analyzer.get_audio_data()
-
+    
 
     """ Animator """
     chh_animator = ClosedHihatAnimator(
@@ -71,15 +71,13 @@ def main():
         WIDTH,
         HEIGHT
     )
-    #chh_animator.print_json(JSON_OUTPUT_PATH)
-
+   
     ohh_animator = OpenHihatAnimator(
         ohh_audio_data,
         FPS,
         WIDTH,
         HEIGHT
     )
-    #ohh_animator.print_json(JSON_OUTPUT_PATH)
 
     shaker_animator = ShakerAnimator(
         shaker_audio_data,
@@ -87,7 +85,6 @@ def main():
         WIDTH,
         HEIGHT
     )
-    #shaker_animator.print_json(JSON_OUTPUT_PATH)
 
     clap_animator = ClapAnimator(
         clap_audio_data,
@@ -95,12 +92,12 @@ def main():
         WIDTH,
         HEIGHT
     )
-
+    
     # print JSON
-    #chh_animator.print_json(JSON_OUTPUT_PATH)
-    #ohh_animator.print_json(JSON_OUTPUT_PATH)
-    shaker_animator.print_json("SHAKER_hit_data.json")
-    clap_animator.print_json("CLAP_hit_data.json")
+    #chh_animator.print_json("CHH_hit_data.json")
+    #ohh_animator.print_json("OHH_hit_data.json")
+    #shaker_animator.print_json("SHAKER_hit_data.json")
+    #clap_animator.print_json("CLAP_hit_data.json")
 
 
     # ---            --- #
@@ -108,7 +105,7 @@ def main():
         chh_animator,
         ohh_animator,
         shaker_animator,
-        clap_animator
+        clap_animator,
     ]
     # ---            --- #
 
