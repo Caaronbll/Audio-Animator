@@ -98,9 +98,8 @@ def shaker_hit_logic(hit_data):
             frame["hit_status"] = "attack"
             continue
 
-        previous_amplitude = hit_data[
-            index - 1
-        ]["max_amp"]
+        previous_frame = hit_data[index - 1]
+        previous_amplitude = previous_frame["max_amp"]
 
         # Increasing amplitude indicates a new attack.
         if (
@@ -110,6 +109,12 @@ def shaker_hit_logic(hit_data):
             frame["hit_status"] = "attack"
         else:
             frame["hit_status"] = "decay"
+
+        if previous_frame["hit_status"] is None and frame["hit_status"] == "attack":
+            frame["alpha"] = max(int(current_amplitude * 2.2), 80)
+        elif frame["hit_status"]:
+            frame["alpha"] = max(0, previous_frame["alpha"] - 8)
+        
 
     return hit_data
 

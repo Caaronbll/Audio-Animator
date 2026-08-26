@@ -81,45 +81,25 @@ def ohh_animation_logic(frame, width=1280, height=720):
 
 
 def shaker_animation_logic(frame, width=1280, height=720):
-    """Returns the shaker animation layer for one frame."""
+    """Returns an Shaker layer, or None when no hit is active."""
 
-    # Create a transparent layer for the instrument.
+    if frame["hit_status"] is None:
+        return None
+
     animation_layer = Image.new(
         "RGBA",
         (width, height),
         (0, 0, 0, 0)
     )
 
-    hit_status = frame["hit_status"]
-
-    # Return an empty layer when no sound is present.
-    if hit_status is None:
-        return animation_layer
-
-    average_amplitude = frame["avg_amp"]
-    max_amplitude = frame["max_amp"]
-
-    radius_scale = 1.7
-
-    # Determine the circle size from the frame amplitude.
-    if average_amplitude < 0.1:
-        radius = 0
-    else:
-        radius = max(
-            int(max_amplitude * radius_scale),
-            10
-        )
-
-    # Attacks are fully visible; decays fade with amplitude.
-    if hit_status == "attack":
-        alpha = 255
-    else:
-        alpha = int(max_amplitude * 10)
-
-    center_x = width // 4
-    center_y = height // 4
-
     draw = ImageDraw.Draw(animation_layer)
+
+    center_x = width // 2
+    center_y = height // 2
+
+    rms_amp = min(max(frame["rms_amp"], 1), 18)
+    alpha = frame["alpha"]
+    radius = 80
 
     draw.ellipse(
         (
@@ -128,7 +108,7 @@ def shaker_animation_logic(frame, width=1280, height=720):
             center_x + radius,
             center_y + radius
         ),
-        fill=(228, 255, 193, alpha)
+        fill=(178, 211, 242, alpha)
     )
 
     return animation_layer
@@ -155,11 +135,5 @@ def clap_animation_logic(frame, width=1280, height=720):
         (0, 0, width, height),
         fill=(189, 171, 98, alpha)
     )
-
-    return animation_layer
-
-
-
-
 
     return animation_layer
