@@ -4,22 +4,24 @@
 def chh_hit_logic(hit_data):
     """Adds closed hi-hat hit-status values to each frame."""
 
+    decay_count = 0
+
     for index, frame in enumerate(hit_data):
         current_amplitude = frame["max_amp"]
 
         # Mark frames with no amplitude as silence.
         if current_amplitude == 0:
             frame["hit_status"] = None
+            decay_count = 0
             continue
 
         # Mark the first non-silent frame as an attack.
         if index == 0 and current_amplitude != 0:
             frame["hit_status"] = "attack"
+            decay_count = 0
             continue
 
-        previous_amplitude = hit_data[
-            index - 1
-        ]["max_amp"]
+        previous_amplitude = hit_data[index - 1]["max_amp"]
 
         # Increasing amplitude indicates a new attack.
         if (
@@ -27,8 +29,11 @@ def chh_hit_logic(hit_data):
             and current_amplitude > 1
         ):
             frame["hit_status"] = "attack"
+            decay_count = 0
         else:
+            decay_count += 1
             frame["hit_status"] = "decay"
+            frame["decay_frame"] = decay_count
 
     return hit_data
 
