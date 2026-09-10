@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from analyzer import Analyzer
+from analyzer_d import Analyzer_d
 from Animators.animator_chh import ClosedHihatAnimator
 from Animators.animator_ohh import OpenHihatAnimator
 from Animators.animator_shaker import ShakerAnimator
@@ -33,25 +33,25 @@ def main():
 
 
     """ Analyzer """
-    chh_analyzer = Analyzer(
+    chh_analyzer = Analyzer_d(
         CHH_AUDIO_PATH,
         BPM,
         FPS
     )
     
-    ohh_analyzer = Analyzer(
+    ohh_analyzer = Analyzer_d(
         OHH_AUDIO_PATH,
         BPM,
         FPS
     )
 
-    shaker_analyzer = Analyzer(
+    shaker_analyzer = Analyzer_d(
         SHAKER_AUDIO_PATH,
         BPM,
         FPS
     )
 
-    clap_analyzer = Analyzer(
+    clap_analyzer = Analyzer_d(
         CLAP_AUDIO_PATH,
         BPM,
         FPS
