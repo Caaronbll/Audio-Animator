@@ -3,3 +3,4 @@ numpy<2
 
 essentia
 Pillow
+pretty-midi==0.2.11.post0
